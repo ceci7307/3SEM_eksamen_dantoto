@@ -23,6 +23,69 @@
       </div>
     </header>
 
+    <!-- KORREKT MODAL -->
+    <div id="modalen">
+      <div class="funds-success-message-container">
+        <div class="funds-checkmark-text-container">
+          <div class="funds-checkmark-container">
+            <svg
+              class="funds-checkmark"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 52 52"
+            >
+              <circle
+                class="funds-checkmark-circle"
+                cx="26"
+                cy="26"
+                r="25"
+                fill="none"
+              />
+              <path
+                class="funds-checkmark-check"
+                fill="none"
+                d="M14.1 27.2l7.1 7.2 16.7-16.8"
+              />
+            </svg>
+
+            <div class="funds-display-on-ie">
+              <svg
+                class="funds-ie-checkmark"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 52 52"
+              >
+                <circle
+                  class="funds-ie-checkmark-circle"
+                  cx="26"
+                  cy="26"
+                  r="25"
+                  fill="none"
+                />
+                <path
+                  class="funds-ie-checkmark-check"
+                  fill="none"
+                  d="M14.1 27.2l7.1 7.2 16.7-16.8"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <h1 class="funds-success-done-text">Velkommen!</h1>
+        </div>
+        <div class="funds-success-message">
+          <h2>Du er nu oprettet som bruger</h2>
+          <a href="scene_1.html"> <p>Fortsæt til spillet</p></a>
+        </div>
+      </div>
+    </div>
+    <!-- FORKERT MODAL -->
+    <div id="modalen_wrong">
+      <div class="wrong-container">
+        <h1 class="text">Noget gik galt!</h1>
+        <h2>Du er allerede oprettet med denne mail</h2>
+        <button class="luk"><p>Prøv igen</p></button>
+      </div>
+    </div>
+
     <!-- FORM-->
     <div class="modal">
       <div class="modal__container">
@@ -91,7 +154,9 @@
               </li>
 
               <li>
-                <button type="submit" class="button">OPRET BRUGER</button>
+                <button type="submit" class="button">
+                  OPRET BRUGER
+                </button>
               </li>
               <a href="scene_1.html"
                 ><p class="tilbage">Jeg har allerede en bruger</p></a
@@ -99,11 +164,8 @@
             </ul>
           </form>
         </div>
-        <!-- END: .modal__content -->
       </div>
-      <!-- END: .modal__container -->
     </div>
-    <!-- END: .modal -->
 
     <script src="formJavascript.js"></script>
   </body>

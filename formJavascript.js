@@ -29,10 +29,10 @@ function post(nyUser) {
     .then(data => {
       if (data.message) {
         //det gik ikke
-        alert("GIK IKKE");
+        visModal_wrong();
       } else {
         //det gik, brugeren blev oiprettet
-        alert("GIK");
+        visModal();
       }
     });
 }
@@ -48,3 +48,22 @@ formular.addEventListener("submit", e => {
   };
   post(payload);
 });
+
+let modal;
+//MODAL
+function visModal() {
+  modal = document.querySelector("#modalen");
+  modal.classList.add("vis");
+  document.querySelector(".modal__featured").style.display = "none";
+}
+//MODAL WRONG
+function visModal_wrong() {
+  modal = document.querySelector("#modalen_wrong");
+  modal.classList.add("vis");
+  document.querySelector(".modal__featured").style.display = "none";
+  modal.querySelector(".luk").addEventListener("click", skjulModal);
+}
+
+function skjulModal() {
+  modal.classList.remove("vis");
+}
