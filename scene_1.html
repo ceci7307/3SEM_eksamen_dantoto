@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- TITEL OG BESKRIVELSE  -->
+    <title>Scene 1</title>
+    <meta
+      name="description"
+      content="This is an example of a meta description. This will often show up in search results."
+    />
+    <!-- FONT  -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- STYLE  -->
+    <link rel="stylesheet" href="outputScene1.css" />
+  </head>
+  <body>
+    <!-- HEADER OG NAV  -->
+    <header>
+      <div id="nav">
+        <img src="dantoto_pic.png" alt="logo" />
+        <p>Menupunkt</p>
+        <p>Menupunkt</p>
+      </div>
+    </header>
+
+    <!-- INDHOLD  -->
+    <!-- MENU MODAL -->
+    <section id="modal">
+      <!-- FORM-->
+      <div class="modalen">
+        <div class="modal__container">
+          <div class="modal__featured">
+            <div class="modal__circle"></div>
+            <img src="splash-01.png" class="modal__product" />
+            <!-- <p class="modal__product2">
+          100% deposit returned <br />
+          You can always cancel the order <br />
+          100% battery in your pocket
+        </p> -->
+          </div>
+          <div class="modal__content">
+            <div class="hej">
+              <button class="luk">X</button>
+              <h2>LOG IND</h2>
+              <p>
+                Log ind med din bruger og spil med gratis, start spillet hvor du
+                sidst sluttede og få dit brugernavn op på ranglisten.
+                <br />
+                Lad os komme i gang
+              </p>
+            </div>
+            <form>
+              <ul class="form-list">
+                <li class="form-list__row">
+                  <label>Brugernavn</label> <br />
+                  <input type="text" name="" placeholder="" />
+                </li>
+
+                <li class="form-list__row">
+                  <label>Kode</label> <br />
+                  <input type="password" name="" placeholder="*********" />
+                </li>
+
+                <li>
+                  <button class="button" id="logind">
+                    <a href="banen.html">LOG IND</a>
+                  </button>
+                  <button class="button" id="opret">
+                    <a href="opret.html">OPRET EN BRUGER</a>
+                  </button>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <!--TEMPLATE-->
+      <div class="data-container" id="horses"></div>
+
+      <template id="heste-template">
+        <article class="heste-article hest">
+          <img class="data-billede" src="" alt="" />
+          <div class="tekst">
+            <p class="data-id"></p>
+            <h1 class="data-hestenavn"></h1>
+            <p class="data-jockeynavn"></p>
+          </div>
+          <div class="read">
+            <p class="data-odds"></p>
+            <input type="checkbox" class="choose" data-odds="" />
+            <p class="more">﹀</p>
+          </div>
+          <p class="data-beskrivelse info"></p>
+          <!--  <p class="data-odds"></p> -->
+        </article>
+      </template>
+
+      <section id="saldo">
+        <div class="bet">
+          <span> 20 kr<input type="checkbox" class="tyve" /> </span>
+          <span> 100 kr<input type="checkbox" class="ethund" /> </span>
+          <span> 50 kr<input type="checkbox" class="halvtreds" /> </span>
+          <span>200 kr<input type="checkbox" class="tohund"/></span>
+        </div>
+        <div class="dinSaldo">
+          <h1>DIN SALDO:</h1>
+          <p class="kr">100 kr.</p>
+        </div>
+        <div class="dinSaldo">
+          <h1>DIN EVT GVINST:</h1>
+          <p class="gevinst">0 kr.</p>
+        </div>
+      </section>
+      <section class="wrap">
+        <section id="billede-section">
+          <img src="splash-01.png" alt="" />
+        </section>
+        <button id="knap">GO!</button>
+      </section>
+    </main>
+
+    <script src="javascriptScene1.js"></script>
+  </body>
+</html>

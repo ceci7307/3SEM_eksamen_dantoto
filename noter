@@ -1,0 +1,3 @@
+            <animateMotion dur="6s" repeatCount="indefinite">
+              <mpath xlink:href="#curve1" />
+            </animateMotion>

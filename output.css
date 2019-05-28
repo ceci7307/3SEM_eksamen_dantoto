@@ -1,0 +1,130 @@
+/* VARIABLER */
+/* GENERELT */
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #dc5f11;
+  margin: 0;
+}
+
+body h1,
+body p {
+  color: white;
+}
+
+img {
+  width: 100%;
+}
+
+/* HEADER & NAV */
+#nav {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to bottom, #ae4a0c 0%, #dc5f11 100%);
+}
+
+#nav img {
+  width: 160px;
+}
+
+#nav p {
+  display: inline-block;
+  margin: 01vw 2vw 2vw 2vw;
+  float: right;
+}
+
+/* SPLASH SPIL */
+.spil {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.spil h1 {
+  font-size: 40px;
+  position: absolute;
+  text-align: center;
+  left: 40vw;
+  top: 17vw;
+  font-weight: bold;
+}
+
+/* CONTENT */
+.allcontent {
+  margin: auto;
+  width: 900px;
+  height: auto;
+}
+
+.allcontent img {
+  width: 100%;
+}
+
+.allcontent section {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 25px;
+}
+
+.allcontent section .lille {
+  margin-top: 20px;
+}
+
+/* PROGRESS BAR */
+.container {
+  width: 100%;
+}
+
+.progressbar {
+  counter-reset: step;
+}
+
+.progressbar li {
+  list-style: none;
+  display: inline-block;
+  width: 30%;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  color: #feb700;
+}
+
+.progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  background-color: #fff;
+}
+
+.progressbar li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+
+.progressbar li:first-child:after {
+  content: none;
+}
+
+.progressbar li.active a {
+  color: #feb700;
+}
+
+.progressbar li.active:before {
+  border-color: #feb700;
+}
+
+.progressbar li.active + li:after {
+  background-color: #fff;
+}

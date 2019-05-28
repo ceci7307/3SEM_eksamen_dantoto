@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form test</title>
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="outputForm.css" />
+  </head>
+  <body>
+    <!-- FORM-->
+    <div class="modal">
+      <div class="modal__container">
+        <div class="modal__featured">
+          <div class="modal__circle"></div>
+          <img src="hesten-kopi.png" class="modal__product" />
+          <!-- <p class="modal__product2">
+            100% deposit returned <br />
+            You can always cancel the order <br />
+            100% battery in your pocket
+          </p> -->
+        </div>
+        <div class="modal__content">
+          <div class="hej">
+            <h2>LOG IND</h2>
+            <p>
+              Log ind med din bruger og spil med gratis, start spillet hvor du
+              sidst sluttede og få dit brugernavn op på ranglisten. <br />
+              Lad os komme i gang
+            </p>
+          </div>
+          <form>
+            <ul class="form-list">
+              <li class="form-list__row">
+                <label>Brugernavn</label> <br />
+                <input type="text" name="" placeholder="" />
+              </li>
+
+              <li class="form-list__row">
+                <label>Kode</label> <br />
+                <input type="password" name="" placeholder="*********" />
+              </li>
+
+              <li>
+                <button class="button" id="logind">
+                  <a href="banen.html">LOG IND</a>
+                </button>
+                <button class="button" id="opret">
+                  <a href="opret.html">OPRET EN BRUGER</a>
+                </button>
+              </li>
+            </ul>
+          </form>
+        </div>
+        <!-- END: .modal__content -->
+      </div>
+      <!-- END: .modal__container -->
+    </div>
+    <!-- END: .modal -->
+    <!--     <script>
+      window.addEventListener("DOMContentLoaded", init);
+      function init() {
+        document.querySelector("#logind").onclick = function() {
+          location.href = "banen.html";
+        };
+      }
+    </script> -->
+  </body>
+</html>

@@ -1,0 +1,93 @@
+/* VARIABLER */
+/* GENERELT */
+body {
+  background-color: #dc5f11;
+  font-family: "Open Sans", sans-serif;
+}
+
+body img {
+  width: 100%;
+}
+
+body h1,
+body h2,
+body li,
+body p {
+  color: #ffffff;
+}
+
+section {
+  width: 600px;
+  height: auto;
+  margin: auto;
+}
+
+section .vinder {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  margin: auto;
+  width: 500px;
+}
+
+section .vinder img {
+  width: 100%;
+  border-radius: 50%;
+  max-width: 100px;
+}
+
+section .rangliste {
+  border: solid 1px black;
+  margin: auto;
+  width: 600px;
+}
+
+section .rangliste h1 {
+  text-align: center;
+}
+
+section .rangliste ol {
+  margin-left: 2vw;
+}
+
+section .saldo {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  margin-top: 1vw;
+  grid-gap: 5px;
+}
+
+section .saldo .nysaldo {
+  display: grid;
+  grid-template-columns: auto auto;
+  border: solid 1px black;
+  width: 300px;
+  padding-left: 1vw;
+}
+
+section .saldo .nysaldo h1 {
+  margin: 0;
+}
+
+section .saldo .nysaldo p {
+  margin-top: 7px;
+  margin-bottom: 0;
+}
+
+section .saldo .knap {
+  cursor: pointer;
+  width: 12vh;
+  height: 5vh;
+  right: 0;
+  color: #ffffff;
+  background-color: #feb700;
+  border-radius: 20px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+
+section .saldo button:hover,
+section .saldo button:active,
+section .saldo button:focus {
+  transform: scale(1.1);
+}
